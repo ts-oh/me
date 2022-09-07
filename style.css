@@ -42,8 +42,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -108,5 +118,34 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+/* Home */
+
+#home {
+  background: whitesmoke;
+  text-align: center;
+  padding: 40px;
+}
+
+.home__avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-black);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-black);
+}
+
+#home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-black);
   border-radius: var(--border-radius);
 }
