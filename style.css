@@ -28,7 +28,7 @@
   --size-border-radius: 6px;
 
   /* Animation */
-  --animation-duration: 250ms;
+  --animation-duration: 350ms;
 }
 
 /* Univeral Tags */
@@ -93,21 +93,29 @@ p {
 /* Navbar */
 
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  /* background-color: var(--color-light-grey); */
+  background-color: var(--color-white-smoke);
   align-items: center;
+  width: 100%;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(150, 215, 177);
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__menu {
   display: flex;
-  padding: 16px;
+  padding: 4px;
+  margin: 4px;
 }
 
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  /* margin: 16px 16px; */
+  margin: 8px 16px;
 }
 
 .navbar__menu__item {
@@ -140,6 +148,7 @@ p {
   background: var(--color-light-grey);
   text-align: center;
   padding: 40px;
+  padding-top: 180px;
 }
 
 .home__avatar {
