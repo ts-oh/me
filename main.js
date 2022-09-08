@@ -6,8 +6,6 @@ const navbar = document.querySelector('#navbar')
 const navbarHeight = navbar.getBoundingClientRect().height
 
 document.addEventListener('scroll', () => {
-  console.log(window.scrollY)
-  console.log('navbar height:', navbarHeight)
   if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark')
   } else {
@@ -24,14 +22,24 @@ navbarMenu.addEventListener('click', (e) => {
   if (link === undefined) {
     return
   }
-  const scrollTo = document.querySelector(link)
-  scrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  scrollTo(link)
 })
 
 // handle contact me button on home
 const homeContactBtn = document.querySelector('#home__contact')
 
 homeContactBtn.addEventListener('click', () => {
-  const scrollTo = document.querySelector('#contact')
-  scrollTo.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  scrollTo('#contact')
+})
+
+function scrollTo(link) {
+  const scrollTo = document.querySelector(link)
+  scrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+}
+
+const home = document.querySelector('#home')
+const homeHeight = home.getBoundingClientRect().height
+
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight
 })
