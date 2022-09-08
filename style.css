@@ -28,7 +28,7 @@
   --size-border-radius: 6px;
 
   /* Animation */
-  --animation-duration: 350ms;
+  --animation-duration: 300ms;
 }
 
 /* Univeral Tags */
@@ -96,13 +96,18 @@ p {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-white-smoke);
+  background-color: var(--color-white);
   align-items: center;
   width: 100%;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
-  background-color: rgb(150, 215, 177);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 16px 0 rgba(105, 105, 105, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all var(--animation-duration) ease-in-out;
 }
 
@@ -130,7 +135,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-white-smoke);
   border-radius: var(--size-border-radius);
 }
 
@@ -192,11 +197,16 @@ section {
 }
 
 .major__icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 16px;
   color: var(--color-black);
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   line-height: 170px;
-  font-size: 70px;
+  font-size: 48px;
   margin: auto;
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
@@ -208,7 +218,7 @@ section {
 }
 
 .major__icon:hover svg {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 .major__description {
@@ -230,7 +240,7 @@ section {
 
 .skillset__left {
   flex-basis: 50%;
-  background-color: lightblue;
+  background-color: rgb(230, 173, 173);
   padding: 16px;
 }
 
@@ -246,7 +256,6 @@ section {
 }
 
 /* Work */
-
 .category__btn {
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
@@ -268,7 +277,7 @@ section {
 }
 
 .category__count {
-  background-color: rgb(255, 180, 150);
+  background-color: rgb(150, 222, 255);
   border-radius: 50%;
   color: var(--color-black);
   width: 24px;
@@ -374,7 +383,8 @@ section {
 }
 
 .contact__links svg:hover {
-  transform: scale(1.5);
+  transition: all var(--animation-duration) ease-in;
+  transform: scale(1.2);
 }
 
 .contact__rights {
