@@ -25,16 +25,17 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fa-solid fa-heart"></i>
+        <!-- <i class="fa-solid fa-heart"></i> -->
+        🦧
         <a href="#">Tim</a>
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">My Work</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My Work</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
       <!-- Toggle button -->
@@ -50,13 +51,10 @@
         alt="tim's profile photo"
         class="home__avatar"
       />
-      <h1 class="home__title">
-        Hello,<br />
-        I'm Tim
-      </h1>
+      <h1 class="home__title">Hello 👋 I'm Tim</h1>
       <h2 class="home__description">
-        A Software Engineer and Korean New Zealander residing in Seoul, South
-        Korea.
+        { A Software Engineer and Korean 🇰🇷 New Zealander 🇳🇿 <br />
+        residing in Seoul, South Korea. }
       </h2>
       <button id="home__contact">Contact Me</button>
     </section>
@@ -68,30 +66,34 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-react"></i>
           </div>
           <h2 class="major__title">Front-End:</h2>
           <div class="major__description">
             HTML, CSS, <br />
-            JavaScript & React
+            JavaScript, & React
           </div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fa-regular fa-file-code"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-solid fa-gem"></i>
+            <i class="fa-brands fa-golang"></i>
           </div>
-          <h2 class="major__title">Languages:</h2>
-          <div class="major__description">Python & Ruby</div>
+          <h2 class="major__title">Other:</h2>
+          <div class="major__description">Python, Ruby, & Go</div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fa-solid fa-laptop-code"></i>
+            <i class="fa-solid fa-terminal"></i>
           </div>
-          <h2 class="major__title">Now Learning:</h2>
+          <h2 class="major__title">Learning:</h2>
           <div class="major__description">
-            Go, Redux, <br />
-            Node.js, MongoDB, <br />
-            GraphQL & TypeScript
+            Node.js, MongoDB, GraphQL, <br />
+            TypeScript, & Redux
           </div>
         </div>
       </div>
@@ -132,7 +134,7 @@
     </section>
 
     <!-- Work -->
-    <section id="projects">
+    <section id="work">
       <div class="section__container">
         <h1>My Projects</h1>
         <button class="category__btn active">
