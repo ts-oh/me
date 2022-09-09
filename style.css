@@ -533,12 +533,14 @@ button.arrow-up-btn.visible {
   }
 
   .skillset__left {
-    width: 45%;
-    margin: 16px 16px;
+    text-align: center;
+    width: 50%;
+    margin: 16px;
   }
   .skillset__right {
-    width: 45%;
-    margin: 16px 16px;
+    text-align: center;
+    width: 50%;
+    margin: 16px;
   }
 
   #work {
