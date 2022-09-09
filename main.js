@@ -35,6 +35,7 @@ homeContactBtn.addEventListener('click', () => {
 function scrollTo(link) {
   const scrollTo = document.querySelector(link)
   scrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  navbarMenu.classList.remove('open')
 }
 
 const home = document.querySelector('#home')
@@ -42,4 +43,26 @@ const homeHeight = home.getBoundingClientRect().height
 
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight
+})
+
+// Arrow up button logic when scrolling down
+const arrowUpBtn = document.querySelector('.arrow-up-btn')
+
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUpBtn.classList.add('visible')
+  } else {
+    arrowUpBtn.classList.remove('visible')
+  }
+})
+
+arrowUpBtn.addEventListener('click', () => {
+  scrollTo('#home')
+})
+
+// Show menu links when burger menu is clicked
+const burgerMenuBtn = document.querySelector('.navbar__toggle-btn')
+
+burgerMenuBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open')
 })
