@@ -339,7 +339,7 @@ section {
   height: 300px;
   margin: 2px 2px;
   padding: 0 4px;
-  background-color: whitesmoke;
+  background-color: var(--color-light-grey);
   position: relative;
   display: flex;
   justify-content: center;
