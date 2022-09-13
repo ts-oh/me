@@ -200,6 +200,11 @@ section {
 }
 
 /* About */
+#about > p {
+  margin: 0 16px;
+  text-align: justify;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-around;
@@ -240,6 +245,10 @@ section {
   background-color: var(--color-light-grey);
   display: flex;
   flex-direction: column;
+}
+
+#skills > p {
+  text-align: justify;
 }
 
 .skillset {
@@ -324,9 +333,10 @@ section {
 }
 
 .project {
-  width: 280px;
-  height: 250px;
-  margin: 2px;
+  width: 400px;
+  height: 300px;
+  margin: 2px 2px;
+  padding: 0 4px;
   background-color: whitesmoke;
   position: relative;
   display: flex;
