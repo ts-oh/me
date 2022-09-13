@@ -245,10 +245,12 @@ section {
   background-color: var(--color-light-grey);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #skills > p {
-  text-align: justify;
+  text-align: center;
+  max-width: auto;
 }
 
 .skillset {
@@ -409,6 +411,12 @@ section {
 
 .contact__email {
   font-size: var(--font-medium);
+  font-weight: bold;
+}
+
+.contact__email:hover {
+  color: cornflowerblue;
+  transition: all var(--animation-duration-fast) ease-in;
 }
 
 .contact__links {
