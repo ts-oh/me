@@ -1,7 +1,6 @@
 'use strict'
 
 // add and remove navbar transition and color change when it is scrolled beyond navbar height in pixels
-
 const navbar = document.querySelector('#navbar')
 const navbarHeight = navbar.getBoundingClientRect().height
 

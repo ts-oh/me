@@ -201,7 +201,7 @@ section {
 
 /* About */
 #about > p {
-  margin: 0 16px;
+  margin: 16px 16px;
   text-align: justify;
 }
 
@@ -213,7 +213,7 @@ section {
 
 .major__icon {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 16px 16px;
@@ -233,7 +233,7 @@ section {
 }
 
 .major__icon:hover svg {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .major__description {
@@ -335,10 +335,10 @@ section {
 }
 
 .project {
-  width: 400px;
-  height: 300px;
-  margin: 2px 2px;
-  padding: 0 4px;
+  width: 500px;
+  height: 350px;
+  margin: 4px 4px;
+  padding: 4px 4px;
   background-color: var(--color-light-grey);
   position: relative;
   display: flex;
@@ -348,7 +348,7 @@ section {
 
 .project__img {
   max-width: 100%;
-  max-width: 100%;
+  max-height: 100%;
 }
 
 .project__description {
@@ -579,6 +579,7 @@ button.arrow-up-btn.visible {
 
   .project {
     flex-grow: 1;
+    height: 320px;
     width: 320px;
   }
 
