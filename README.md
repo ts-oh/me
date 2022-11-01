@@ -1,3 +1,3 @@
-# Portfolio 💼
+# 💼 Portfolio
 
-## 🔗 to [Tim's Portfolio Page](https://ts-oh.github.io/portfolio/)
+🔗 to [Tim's Portfolio Page](https://ts-oh.github.io/portfolio/)
