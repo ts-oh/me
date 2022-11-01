@@ -1,3 +1,7 @@
-# 💼 Portfolio
+# 💼 Portfolio Site
 
-🔗 to [Tim's Portfolio Page](https://ts-oh.github.io/portfolio/)
+Github pages deployment link:
+1️⃣ 🔗 [https://ts-oh.github.io/portfolio/](https://ts-oh.github.io/portfolio/)
+
+Alternative deployment link to Surge:
+2️⃣ 🔗 [http://tsoh.surge.sh/](http://tsoh.surge.sh/)
