@@ -129,11 +129,6 @@ p {
   cursor: pointer;
 }
 
-/* .navbar__menu__item.active {
-  border: 2px solid black;
-  border-radius: var(--size-border-radius);
-} */
-
 .navbar__menu__item:hover {
   background-color: var(--color-white-smoke);
   border-radius: var(--size-border-radius);
@@ -285,48 +280,11 @@ section {
 }
 
 .skillset__title {
-  /* font-weight: var(--weight-semi-bold);
-  text-decoration: underline;
-  text-underline-offset: 4px; */
   font-size: var(--font-medium);
 }
 
 /* Work */
-/* .category__btn {
-  border: 2px solid var(--color-black);
-  border-radius: var(--size-border-radius);
-  font-size: var(--font-regular);
-  padding: 8px 24px;
-  margin-bottom: 24px;
-}
-
-.category__btn.active,
-.category__btn:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
-}
-
-.category__btn.active,
-.category__btn:hover .category__count {
-  opacity: 1;
-  top: 0;
-} */
-
-/* .category__count {
-  background-color: rgb(150, 222, 255);
-  border-radius: 50%;
-  color: var(--color-black);
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
-  opacity: 0;
-  transition: all var(--animation-duration) ease-in;
-  font-size: var(--font-small);
-} */
+/* add css here for future Work section */
 
 .work__projects {
   display: flex;
@@ -336,10 +294,10 @@ section {
 
 .project {
   width: 500px;
-  height: 350px;
+  height: 380px;
   margin: 4px 4px;
-  padding: 4px 4px;
-  background-color: var(--color-light-grey);
+  padding: 8px 8px;
+  background-color: var(--color-white-smoke);
   position: relative;
   display: flex;
   justify-content: center;
@@ -393,7 +351,6 @@ section {
 }
 
 /* Contact */
-
 #contact {
   background-color: var(--color-light-grey);
   padding: 50px 50px 24px 50px;
